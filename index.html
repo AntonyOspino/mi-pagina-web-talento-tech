@@ -1,70 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Sobre Mi</title>
-</head>
-<body>
-    <h1>Las Principales cosas Sobre Mi</h1>
-    <h2>primera</h2>
-    <p>Hola me llamo Antony Ospino, Quiero ser un gran desarrollador, no simplemente un programador, quiero conseguir un gran empleo</p>
-    <h2>segunda</h2>
-    <p>para este fin, tengo conocimientos en HTML, CSS, JS, REACT, NODEJS, NEXT, BD-MYSQL</p>
-    <img src="./imgs/miFoto.webp" alt="miFoto">
-    <a href="https://www.linkedin.com/in/antony-ospino-polo" target="_blank">linkedin</a>
-    <a href="https://github.com/AntonyOspino" target="_blank">github</a>
-    <a href="https://api.whatsapp.com/send?phone=573006353513" target="_blank">whatsapp</a>
-    <h2>mis pasatiempos</h2>
-    <ul>
-        <li>Aprender nuevas tecnologias</li>
-        <li>tocar guitarra y cantar</li>
-        <li>leer manwhas</li>
-    </ul>
-    <h2>Mis tareas a realizar</h2>
-    <ol>
-        <li>Realizar los proyectos universitarios</li>
-        <li>ir al bootcamp frontEnd</li>
-        <li>Asistir al curso de ingles</li>
-    </ol>
-    <table>
-        <thead>
-            <tr>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miercoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ir al bootcamp frontEnd de 8am a 12pm, <br>
-                    Realizar los proyectos universitarios de 1pm a 5pm</td>
-                <td>ir al bootcamp frontEnd de 8am a 12pm, <br>
-                    Realizar los proyectos universitarios de 1pm a 5pm</td>
-                <td>ir al bootcamp frontEnd de 8am a 12pm, <br>
-                    Asistir al curso de ingles de 2pm a 4pm, <br>
-                    Realizar los proyectos universitarios de 8pm a 10pm</td>
-                <td>ir al bootcamp frontEnd de 8am a 12pm, <br>
-                    Asistir al curso de ingles de 2pm a 4pm, <br>
-                    Realizar los proyectos universitarios de 8pm a 10pm</td>
-                <td>ir al bootcamp frontEnd de 8am a 12pm, <br>
-                    Asistir al curso de ingles de 2pm a 4pm, <br>
-                    Realizar los proyectos universitarios de 8pm a 10pm</td>
-            </tr>
-        </tbody>
-    </table>
-    <form>
-        <h2>¡Contactame!</h2>
-        <label for="nombreCliente">Nombre:</label>
-        <input type="text" id="nombreCliente" placeholder="ejemp: Antony Ospino">
-        <label for="descripcionCliente">Descripcion:</label>
-        <input type="text" id="descripcionCliente" placeholder="ejemp: Deseo contactarte por que ...">
-        <label for="correoCliente">Correo Electronico:</label>
-        <input type="text" id="correoCliente" placeholder="ejemp: antony.ospino@gmail.com">
-        <button type="submit">Enviar</button>
-    </form>
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="titulo-principal">Las Principales cosas Sobre Mi</h1>
+    </header>
 
-</body>
+    <main class="main-content">
+      <section class="seccion" id="presentacion">
+        <h2 class="subtitulo">Primera</h2>
+        <p class="texto-destacado">
+          Hola me llamo Antony Ospino, Quiero ser un gran desarrollador, no
+          simplemente un programador, quiero conseguir un gran empleo
+        </p>
+      </section>
+
+      <section class="seccion" id="habilidades">
+        <h2 class="subtitulo">Segunda</h2>
+        <p>
+          Para este fin, tengo conocimientos en
+          <span class="tecnologia">HTML</span>,
+          <span class="tecnologia">CSS</span>,
+          <span class="tecnologia">JS</span>,
+          <span class="tecnologia">REACT</span>,
+          <span class="tecnologia">NODEJS</span>,
+          <span class="tecnologia">NEXT</span>,
+          <span class="tecnologia">BD-MYSQL</span>
+        </p>
+      </section>
+
+      <div class="perfil">
+        <img src="./imgs/miFoto.webp" alt="miFoto" id="foto-perfil" />
+        <div class="redes-sociales">
+          <a
+            href="https://www.linkedin.com/in/antony-ospino-polo"
+            target="_blank"
+            class="red-social linkedin"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/AntonyOspino"
+            target="_blank"
+            class="red-social github"
+            >GitHub</a
+          >
+          <a
+            href="https://api.whatsapp.com/send?phone=573006353513"
+            target="_blank"
+            class="red-social whatsapp"
+            >WhatsApp</a
+          >
+        </div>
+      </div>
+
+      <section class="seccion" id="pasatiempos">
+        <h2 class="subtitulo">Mis pasatiempos</h2>
+        <ul class="lista">
+          <li class="item-lista">Aprender nuevas tecnologias</li>
+          <li class="item-lista">Tocar guitarra y cantar</li>
+          <li class="item-lista">Leer manwhas</li>
+        </ul>
+      </section>
+
+      <section class="seccion" id="tareas">
+        <h2 class="subtitulo">Mis tareas a realizar</h2>
+        <ol class="lista-ordenada">
+          <li class="item-lista">Realizar los proyectos universitarios</li>
+          <li class="item-lista">Ir al bootcamp frontEnd</li>
+          <li class="item-lista">Asistir al curso de ingles</li>
+        </ol>
+      </section>
+
+      <section class="seccion" id="horario">
+        <h2 class="subtitulo">Mi horario semanal</h2>
+        <table class="tabla-horario">
+          <thead>
+            <tr>
+              <th class="dia-semana">Lunes</th>
+              <th class="dia-semana">Martes</th>
+              <th class="dia-semana">Miércoles</th>
+              <th class="dia-semana">Jueves</th>
+              <th class="dia-semana">Viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="actividad">
+                Ir al bootcamp frontEnd de 8am a 12pm, <br />
+                Realizar los proyectos universitarios de 1pm a 5pm
+              </td>
+              <td class="actividad">
+                Ir al bootcamp frontEnd de 8am a 12pm, <br />
+                Realizar los proyectos universitarios de 1pm a 5pm
+              </td>
+              <td class="actividad">
+                Ir al bootcamp frontEnd de 8am a 12pm, <br />
+                Asistir al curso de ingles de 2pm a 4pm, <br />
+                Realizar los proyectos universitarios de 8pm a 10pm
+              </td>
+              <td class="actividad">
+                Ir al bootcamp frontEnd de 8am a 12pm, <br />
+                Asistir al curso de ingles de 2pm a 4pm, <br />
+                Realizar los proyectos universitarios de 8pm a 10pm
+              </td>
+              <td class="actividad">
+                Ir al bootcamp frontEnd de 8am a 12pm, <br />
+                Asistir al curso de ingles de 2pm a 4pm, <br />
+                Realizar los proyectos universitarios de 8pm a 10pm
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="seccion" id="contacto">
+        <form class="formulario-contacto">
+          <h2 class="subtitulo">¡Contáctame!</h2>
+          <div class="grupo-formulario">
+            <label for="nombreCliente" class="etiqueta-formulario"
+              >Nombre:</label
+            >
+            <input
+              type="text"
+              id="nombreCliente"
+              class="campo-formulario"
+              placeholder="ejemp: Antony Ospino"
+            />
+          </div>
+          <div class="grupo-formulario">
+            <label for="descripcionCliente" class="etiqueta-formulario"
+              >Descripción:</label
+            >
+            <input
+              type="text"
+              id="descripcionCliente"
+              class="campo-formulario"
+              placeholder="ejemp: Deseo contactarte por que ..."
+            />
+          </div>
+          <div class="grupo-formulario">
+            <label for="correoCliente" class="etiqueta-formulario"
+              >Correo Electrónico:</label
+            >
+            <input
+              type="text"
+              id="correoCliente"
+              class="campo-formulario"
+              placeholder="ejemp: antony.ospino@gmail.com"
+            />
+          </div>
+          <button type="submit" class="boton-enviar">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
